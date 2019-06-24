@@ -38,3 +38,8 @@ PRODUCT_COPY_FILES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
