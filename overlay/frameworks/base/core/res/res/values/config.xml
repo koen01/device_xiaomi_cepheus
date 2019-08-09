@@ -688,4 +688,7 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
      -->
     <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
+
+    <!-- Lawnstep -->
+    <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.ci/com.android.quickstep.RecentsActivity</string>
 </resources>
