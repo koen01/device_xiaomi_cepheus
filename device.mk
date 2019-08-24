@@ -125,6 +125,11 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Perf boot jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
