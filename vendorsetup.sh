@@ -1,0 +1,2 @@
+add_lunch_combo bootleg_cepheus-userdebug
+add_lunch_combo bootleg_cepheus-eng
