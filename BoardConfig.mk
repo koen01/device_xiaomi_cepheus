@@ -20,6 +20,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := cepheus_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/cepheus/BoardConfigVendor.mk
