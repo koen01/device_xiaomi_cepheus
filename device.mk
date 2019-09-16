@@ -79,6 +79,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_cepheus
+PRODUCT_COPY_FILES += \
+    vendor/bootleggers/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -141,10 +143,6 @@ PRODUCT_PACKAGES += \
 	
 PRODUCT_BOOT_JARS += \
     com.nxp.nfc.nq
-	
-# OTA
-PRODUCT_PACKAGES += \
-    Updates
 	
 # Perf boot jars
 PRODUCT_BOOT_JARS += \

@@ -1,2 +1,2 @@
-add_lunch_combo syberia_cepheus-userdebug
+add_lunch_combo bootleg_cepheus-userdebug
 export SKIP_ABI_CHECKS=true
