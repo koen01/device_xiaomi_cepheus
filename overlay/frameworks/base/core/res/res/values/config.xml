@@ -1078,4 +1078,11 @@
         <item>hal_srgb:srgb</item>
         <item>smart_MC:dci_p3</item>
     </string-array>
+
+    <!-- Default state for LiveDisplay -->
+    <bool name="config_liveDisplayAvailable">true</bool>
+
+    <!-- Use default display mode -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
+
 </resources>
