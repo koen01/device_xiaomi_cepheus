@@ -7,10 +7,10 @@
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bootleg_cepheus
+PRODUCT_NAME := aosip_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9
@@ -25,8 +25,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-#select Bootanimation
-TARGET_PICK_BOOTANIMATION=2,5,9
-
-#use Lawnchair Launcher
-BOOTLEGGERS_SITDOWN :=true
