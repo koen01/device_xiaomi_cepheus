@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cepheus.mk
+    $(LOCAL_DIR)/gzosp_cepheus.mk
+
+COMMON_LUNCH_CHOICES := \
+    gzosp_cepheus-user \
+    gzosp_cepheus-userdebug \
+    gzosp_cepheus-eng

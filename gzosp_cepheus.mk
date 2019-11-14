@@ -7,13 +7,13 @@
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_cepheus
+PRODUCT_NAME := gzosp_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9
