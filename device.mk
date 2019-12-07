@@ -29,6 +29,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 $(call inherit-product, device/xiaomi/sm8150-common/sm8150.mk)
 
 # Fingerprint
+PRODUCT_COPY_FILES += \
+    vendor/xtended/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm8150
 
