@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ion_cepheus.mk
+    $(LOCAL_DIR)/syberia_cepheus.mk

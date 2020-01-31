@@ -6,16 +6,15 @@
 
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/ion/config/common_full_phone.mk)
+# Inherit some common Syberia stuff
+$(call inherit-product, vendor/syberia/common.mk)
 
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := ion_cepheus
+PRODUCT_NAME := syberia_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9
