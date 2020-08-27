@@ -21,6 +21,10 @@ DEVICE_PATH := device/xiaomi/cepheus
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Inherit from proprietary files
+include vendor/xiaomi/cepheus/BoardConfigVendor.mk
+include vendor/miuicamera/common/BoardConfigVendor.mk
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -40,6 +44,10 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
+
+# Camera
+TARGET_USES_QTI_CAMERA_DEVICE := true
+USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
