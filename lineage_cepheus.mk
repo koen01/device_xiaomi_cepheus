@@ -41,6 +41,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
-
-# Include firmware
-$(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
