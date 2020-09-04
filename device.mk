@@ -285,9 +285,9 @@ PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi-libperfmgr \
-    powerhint.json
+#P#RODUCT_PACKAGES += \
+ #   android.hardware.power@1.3-service.xiaomi-libperfmgr \
+ #   powerhint.json
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
