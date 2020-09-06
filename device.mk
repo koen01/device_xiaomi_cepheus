@@ -284,11 +284,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi-libperfmgr \
-    powerhint.json
-
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -431,3 +426,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+#FOD ANIMATIONS
+EXTRA_FOD_ANIMATIONS := true
+
