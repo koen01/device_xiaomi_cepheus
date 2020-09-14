@@ -18,6 +18,9 @@ $(call inherit-product, device/xiaomi/cepheus/msmnile.mk)
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Add lawnchair launcher
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
@@ -32,7 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="cepheus" \
     TARGET_DEVICE="cepheus"
 
-# Inherit from custom vendor
+# Inherit MiuiCamera from custom vendor
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
