@@ -4,7 +4,7 @@ type remosaic_daemon_service, vndservice_manager_type;
 
 allow remosaic_daemon ion_device:chr_file r_file_perms;
 
-r_dir_file(remosaic_daemon, vendor_camera_data_file)
+#r_dir_file(remosaic_daemon, vendor_camera_data_file)
 
 init_daemon_domain(remosaic_daemon)
 
