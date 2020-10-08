@@ -33,7 +33,11 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="cepheus" \
-    TARGET_DEVICE="cepheus"
+    TARGET_DEVICE="cepheus" \
+    PRIVATE_BUILD_DISC="coral-user 11 RP1A.200720.009 6720564 release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # Inherit MiuiCamera from custom vendor
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
